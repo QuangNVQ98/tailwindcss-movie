@@ -11,7 +11,7 @@ body {
 .swiper-slide {
   transition: all 300ms ease-in-out;
   border-radius: 5px;
-  height: 210px !important;
+  height: 210px;
   display: flex;
   justify-items: end;
   align-items: center;
