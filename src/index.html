@@ -23,9 +23,9 @@
     import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
     const swiper = new Swiper(".swiper-container", {
-      slidesPerView: 2,
-      slidesPerGroup: 1,
-      centeredSlides: true,
+      slidesPerView: 6,
+      slidesPerGroup: 6,
+      centeredSlides: false,
       loop: true,
       navigation: {
         nextEl: '.swiper-button-next',
@@ -71,6 +71,16 @@
           spaceBetween: 5,
           centeredSlides: false
         }
+      }
+    });
+    const swiper1 = new Swiper(".swiper-container-1", {
+      slidesPerView: 5,
+      slidesPerGroup: 5,
+      centeredSlides: false,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       }
     });
 
@@ -152,10 +162,10 @@
   </section>
 
   <section class="pb-125 w-full h-auto relative">
-    <div class="w-full absolute -top-200">
+    <div class="w-full absolute -top-[135%]">
       <p class="text-gray-e5 px-58 text-2xl font-semibold mb-20 mt-20">Top 10 chương trình truyền hình tại Việt Nam hôm
         nay</p>
-      <div class="swiper-container">
+      <div class="swiper-container-1">
         <div class="swiper-wrapper">
           <div class="swiper-slide flex max-w-300 h-210 relative justify-end">
             <img class="w-1 absolute -left-30" src="../assets/images/number-1.png" alt="">
@@ -271,7 +281,7 @@
     <div class="w-full">
       <p class="text-gray-e5 px-58 text-2xl font-semibold mb-20 mt-20">Top 10 phim tại Việt Nam hôm
         nay</p>
-      <div class="swiper-container">
+      <div class="swiper-container-1">
         <div class="swiper-wrapper">
           <div class="swiper-slide flex max-w-300 h-210 relative justify-end">
             <img class="w-1 absolute -left-30" src="../assets/images/number-1.png" alt="">
