@@ -691,20 +691,12 @@ video {
   margin-right: 15px;
 }
 
-.mb-60 {
-  margin-bottom: 60px;
+.mt-35 {
+  margin-top: 35px;
 }
 
 .mb-70 {
   margin-bottom: 70px;
-}
-
-.mt-30 {
-  margin-top: 30px;
-}
-
-.mt-35 {
-  margin-top: 35px;
 }
 
 .flex {
@@ -837,10 +829,6 @@ video {
 
 .w-\[31\%\] {
   width: 31%;
-}
-
-.w-\[16\%\] {
-  width: 16%;
 }
 
 .w-\[30\%\] {
@@ -1082,10 +1070,6 @@ video {
 
 .pt-100 {
   padding-top: 100px;
-}
-
-.pb-20 {
-  padding-bottom: 20px;
 }
 
 .text-xl {
