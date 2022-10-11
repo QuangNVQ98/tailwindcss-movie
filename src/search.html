@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <link href="../dist/app.css" rel="stylesheet" />
+  <link href="../dist/output.css" rel="stylesheet" />
+</head>
+
+<body>
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+    const swiper = new Swiper(".swiper-container", {
+      slidesPerView: 6,
+      slidesPerGroup: 6,
+      centeredSlides: false,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 10,
+        },
+        // when window width is >= 600px
+        600: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 5,
+        },
+        // when window width is >= 900px
+        900: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 5,
+        },
+        // when window width is >= 1200px
+        1200: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+          spaceBetween: 5
+        },
+
+        // when window width is >= 1500px
+        1500: {
+          slidesPerView: 5,
+          slidesPerGroup: 5,
+          spaceBetween: 5
+        },
+
+        // when window width is >= 1800px
+        1800: {
+          slidesPerView: 6,
+          slidesPerGroup: 6,
+          spaceBetween: 5,
+          // centeredSlides: false
+        }
+      }
+    });
+    const swiper1 = new Swiper(".swiper-container-1", {
+      slidesPerView: 5,
+      slidesPerGroup: 5,
+      centeredSlides: false,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 10,
+        },
+        // when window width is >= 600px
+        600: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+          spaceBetween: 5,
+        },
+        // when window width is >= 900px
+        900: {
+          slidesPerView: 3,
+          slidesPerGroup: 3,
+          spaceBetween: 5,
+        },
+        // when window width is >= 1200px
+        1200: {
+          slidesPerView: 4,
+          slidesPerGroup: 4,
+          spaceBetween: 5
+        },
+
+        // when window width is >= 1500px
+        1500: {
+          slidesPerView: 5,
+          slidesPerGroup: 5,
+          spaceBetween: 5
+        },
+
+        // when window width is >= 1800px
+        1800: {
+          slidesPerView: 6,
+          slidesPerGroup: 6,
+          spaceBetween: 5,
+          // centeredSlides: false
+        }
+      }
+    });
+
+  </script>
+
+  <header class="fixed w-full w-screen max-w-sc z-20">
+    <div class="
+          flex flex-row
+          items-center
+          lg:py-26
+          lg:px-58
+          py-20
+          px-20
+          bg-gradient-to-b
+          from-black-07
+          to-transparent
+          w-full
+          
+        ">
+      <div class="flex-none">
+        <img class="w-98 h-25 object-cover cursor-pointer" src="../assets/images/logo.png" alt="" />
+      </div>
+      <div class="hidden grow pl-45 lg:flex flex-row text-primary">
+        <div class="mr-20">Trang chủ</div>
+        <div class="mr-20">Mới & Phổ biến</div>
+        <div class="mr-20">Danh sách của tôi</div>
+      </div>
+      <div class="ml-auto lg:ml-0 flex-none">
+        <i class="fa-solid fa-search ml-26 text-xl text-primary"></i>
+        <i class="fa-solid fa-bell ml-26 text-xl text-primary"></i>
+      </div>
+    </div>
+  </header>
+
+  <section class="w-full min-h-[77vh] h-auto pt-100 lg:px-58 px-20">
+    <div class="w-full">
+      <span class="text-gray-80 text-lg mr-10">Khám phá các chương trình liên quan đến: </span>
+      <span class="text-white text-xl font-medium cursor-pointer">Action</span>
+    </div>
+
+    <div class="mt-35 w-full h-auto flex flex-wrap">
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/c4EkF5JAZ83bUqNErhuSd9xw6uJ.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/79DgItjsyH5tpA3mC2xv5gU2zlZ.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/8c4a8kE7PizaGQQnditMmI1xbRp.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/6WR7wLCX0PGLhj51qyvK8MIxtT5.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/rjkmN1dniUHVYAtwuV3Tji7FsDO.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/c4EkF5JAZ83bUqNErhuSd9xw6uJ.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/79DgItjsyH5tpA3mC2xv5gU2zlZ.jpg" alt="">
+
+        <!-- <div
+          class="w-435 h-411 border-ra rounded-md bg-gray-14 text-white absolute flex flex-col z-30 origin-center transform-none opacity-100 shadow-movie absolute -top-100 -left-60">
+          <div class="w-full h-245">
+            <img class="w-full h-full object-cover !max-w-full !max-h-full"
+              src="https://image.tmdb.org/t/p/w500/79DgItjsyH5tpA3mC2xv5gU2zlZ.jpg" alt="">
+          </div>
+          <div class="w-full h-full p-15">
+            <div class="w-full h-auto flex flex-row justify-between mb-20">
+              <div class="flex">
+                <div
+                  class="flex justify-center items-center pl-4 rounded-full text-black bg-gray-e6 w-45 h-45 mr-10 cursor-pointer">
+                  <i class="fa-solid fa-play text-xl"></i>
+                </div>
+                <div
+                  class="flex justify-center items-center pl-2 rounded-full text-white bg-gray-2a w-45 h-45 mr-10 border-solid border-2 border-white cursor-pointer">
+                  <i class="fa-regular fa-plus text-xl"></i>
+                </div>
+                <div
+                  class="flex justify-center items-center pl-2 rounded-full text-white bg-gray-2a w-45 h-45 mr-10 border-solid border-2 border-white cursor-pointer">
+                  <i class="fa-regular fa-thumbs-up text-xl"></i>
+                </div>
+              </div>
+              <div
+                class="flex justify-center items-center pl-1 rounded-full text-white bg-gray-2a w-45 h-45 mr-10 border-solid border-2 border-white cursor-pointer">
+                <i class="fa fa-chevron-down"></i>
+              </div>
+            </div>
+            <div class="mb-15">
+              Thor: Love and Thunder
+            </div>
+
+            <div class="flex items-center text-gray-6d text-sm">
+              <span class="mr-10">Fantasy</span>
+              <span class="mr-10">
+                <i class="fa fa-circle text-[5px] text-white"></i>
+              </span>
+              <span class="mr-10">Action</span>
+              <span class="mr-10">
+                <i class="fa fa-circle text-[5px] text-white"></i>
+              </span>
+              <span class="mr-10">Comedy</span>
+
+            </div>
+
+          </div>
+        </div> -->
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/8c4a8kE7PizaGQQnditMmI1xbRp.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/6WR7wLCX0PGLhj51qyvK8MIxtT5.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/rjkmN1dniUHVYAtwuV3Tji7FsDO.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/c4EkF5JAZ83bUqNErhuSd9xw6uJ.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/79DgItjsyH5tpA3mC2xv5gU2zlZ.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/8c4a8kE7PizaGQQnditMmI1xbRp.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/6WR7wLCX0PGLhj51qyvK8MIxtT5.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/rjkmN1dniUHVYAtwuV3Tji7FsDO.jpg" alt="">
+      </div>
+      <div class="w-[30%] lg:w-[16%] h-170 relative mr-10 mb-70">
+        <img class="w-full h-full object-cover relative rounded-md"
+          src="https://image.tmdb.org/t/p/w500/1BIoJGKbXjdFDAqUEiA2VHqkK1Z.jpg" alt="">
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="mb-5 lg:mb-10 w-full h-auto py-20 flex justify-center items-center">
+    <div class="w-3/5 h-auto">
+      <div class="flex flex-row justify-center lg:justify-start mb-20">
+        <i class="fa-brands fa-facebook-f mr-26 text-xl text-primary text-2xl"></i>
+        <i class="fa-brands fa-instagram mr-26 text-xl text-primary text-2xl"></i>
+        <i class="fa-brands fa-twitter mr-26 text-xl text-primary text-2xl"></i>
+        <i class="fa-brands fa-youtube mr-26 text-xl text-primary text-2xl"></i>
+      </div>
+
+      <div class="hidden lg:flex flex-row text-gray-80 text-sm mb-20">
+        <div class="basis-1/4 flex flex-col leading-7">
+          <span>Mô tả âm thanh</span>
+          <span>Quan hệ với nhà đầu tư</span>
+          <span>Thông báo pháp lý</span>
+        </div>
+        <div class="basis-1/4 flex flex-col leading-7">
+          <span>Trung tâm trợ giúp</span>
+          <span>Việc làm</span>
+          <span>Tùy chọn cookie</span>
+        </div>
+        <div class="basis-1/4 flex flex-col leading-7">
+          <span>Thẻ quà tặng</span>
+          <span>Điều khoàn sử dụng</span>
+          <span>Thông tin doanh nghiệp</span>
+        </div>
+        <div class="basis-1/4 flex flex-col leading-7">
+          <span>Trung tâm đa phương tiện</span>
+          <span>Quyền riêng tư</span>
+          <span>Liên hệ với chúng tôi</span>
+        </div>
+
+      </div>
+
+      <div class="text-gray-80 text-sm">
+        © 2022 Netflix clone
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
