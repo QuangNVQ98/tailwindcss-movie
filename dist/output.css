@@ -699,6 +699,10 @@ video {
   margin-bottom: 70px;
 }
 
+.-mr-80 {
+  margin-right: -80px;
+}
+
 .flex {
   display: flex;
 }

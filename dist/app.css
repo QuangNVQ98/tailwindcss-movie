@@ -99,3 +99,18 @@ body {
   word-break: break-word;
   /* white-space: pre-line; */
 }
+
+.id_item > .id_hover {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s ease-in-out, opacity 0.4s linear;
+}
+
+/* .id_item:hover .id_normal {
+  display: none !important;
+} */
+
+.id_item:hover > .id_hover {
+  visibility: visible;
+  opacity: 1;
+}
